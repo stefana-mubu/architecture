@@ -6,15 +6,14 @@ import Projects from "@lekoarts/gatsby-theme-cara/src/components/projects"
 import Fallback from "@lekoarts/gatsby-theme-cara/src/components/fallback"
 import About from "@lekoarts/gatsby-theme-cara/src/components/about"
 import Contact from "@lekoarts/gatsby-theme-cara/src/components/contact"
-const IDEAL_HEIGHT = 800
+const IDEAL_HEIGHT = 1000
 
 const Cara = () => {
   const { width, height } = useWindowDimensions()
-  const isBigEnough = width > 1399
   const heightToIdealHeightRation = IDEAL_HEIGHT / height
   const factor = heightToIdealHeightRation >= 1 ? heightToIdealHeightRation : 1
-  const projectFactor = width < 580 ? 5 * heightToIdealHeightRation / 1.4 : 0.7 + factor
-  const projectDivider = width < 580 ? projectFactor - heightToIdealHeightRation / 1.1 : projectFactor - 0.4
+  const projectFactor = width < 580 ? 5 * heightToIdealHeightRation / 2 : 0.7 + factor
+  const projectDivider = width < 580 ? projectFactor - heightToIdealHeightRation / 2 : projectFactor - 0.4
   const aboutOffset = factor + projectFactor - ( heightToIdealHeightRation >= 1 ? 1 : heightToIdealHeightRation ) / 2
   const contactOffset = aboutOffset + factor
 
