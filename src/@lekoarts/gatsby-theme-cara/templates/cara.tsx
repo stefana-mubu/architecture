@@ -15,7 +15,7 @@ const Cara = () => {
     <Layout>
       <Parallax pages={isBigEnough ? 4 : 3}>
         <Hero offset={0} factor={1} />
-        {isBigEnough ? <Projects offset={1} factor={1.8} /> : <Fallback offset={1} factor={0.5} />}
+        {isBigEnough ? <Projects offset={1} factor={1.5} /> : <Fallback offset={1} factor={0.5} />}
         <About offset={isBigEnough ? 2.6 : 1.5} factor={1} />
         <Contact offset={isBigEnough ? 3 : 2} factor={1} />
       </Parallax>
