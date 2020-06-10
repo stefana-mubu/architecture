@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx } from "theme-ui"
+import { css } from 'emotion'
 import { Modal, Button } from 'react-bootstrap'
 import ResponsiveEmbed from 'react-responsive-embed'
 
@@ -9,17 +10,6 @@ type ProjectCardProps = {
   title: string
   children: React.ReactNode
   bg: string
-}
-
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
-  }
 }
 
 const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps) => {
@@ -43,8 +33,13 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
             boxShadow: `xl`,
           },
         }}
-      >{title}</button>
+      >
+        <div className='title'>
+          <span className='flex-title'>{title}</span>
+        </div>
+      </button>
       <Modal
+        className={modalWrapper}
         size="xl"
         show={isModalOpen}
         onHide={() => setIsModalOpen(false)}
@@ -58,5 +53,14 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
     </React.Fragment>
   )
 }
+
+const modalWrapper = css`
+  .modal-content {
+    border-radius: 0 !important;
+    .modal-body {
+      padding: 0 !important;
+    }
+  }
+`
 
 export default ProjectCard

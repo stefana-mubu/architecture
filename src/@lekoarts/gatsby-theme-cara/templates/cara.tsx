@@ -6,18 +6,25 @@ import Projects from "@lekoarts/gatsby-theme-cara/src/components/projects"
 import Fallback from "@lekoarts/gatsby-theme-cara/src/components/fallback"
 import About from "@lekoarts/gatsby-theme-cara/src/components/about"
 import Contact from "@lekoarts/gatsby-theme-cara/src/components/contact"
+const IDEAL_HEIGHT = 800
 
 const Cara = () => {
-  const { width } = useWindowDimensions()
+  const { width, height } = useWindowDimensions()
   const isBigEnough = width > 1399
+  const heightToIdealHeightRation = IDEAL_HEIGHT / height
+  const factor = heightToIdealHeightRation >= 1 ? heightToIdealHeightRation : 1
+  const projectFactor = width < 580 ? 5 * heightToIdealHeightRation / 1.4 : 0.7 + factor
+  const projectDivider = width < 580 ? projectFactor - heightToIdealHeightRation / 1.1 : projectFactor - 0.4
+  const aboutOffset = factor + projectFactor - ( heightToIdealHeightRation >= 1 ? 1 : heightToIdealHeightRation ) / 2
+  const contactOffset = aboutOffset + factor
 
   return (
     <Layout>
-      <Parallax pages={isBigEnough ? 4 : 3}>
-        <Hero offset={0} factor={1} />
-        {isBigEnough ? <Projects offset={1} factor={1.5} /> : <Fallback offset={1} factor={0.5} />}
-        <About offset={isBigEnough ? 2.6 : 1.5} factor={1} />
-        <Contact offset={isBigEnough ? 3 : 2} factor={1} />
+      <Parallax pages={2 * factor + 0.25 + projectFactor}>
+        <Hero offset={0} factor={factor} />
+        <Projects offset={factor} factor={projectFactor} factorDivider={projectDivider} />
+        <About offset={aboutOffset} factor={factor} />
+        <Contact offset={contactOffset} factor={0.5} />
       </Parallax>
     </Layout>
   )
