@@ -96,31 +96,31 @@ const l = css`
 `
 
 const one = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}first.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-sound-of-water.jpg);
   background-size: 460px 260px;
   top: -20px;
   left: 45px;
   ${s};
   &.seven {
-    background-image: url(/${process.env.IMG_PREFIX || ''}seventh.jpg);
+    background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-secret-chamber.jpg);
     top: -105px;
     left: 65px;
   }
 `
 
 const two = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}second.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-an-intruder.jpg);
   background-size: 550px 310px;
   ${m};
   &.eight {
-    background-image: url(/${process.env.IMG_PREFIX || ''}eight.jpg);
+    background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-reddish-light.jpg);
     top: -70px;
     left: 20px;
   }
 `
 
 const three = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}third.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-red-glow.jpg);
   background-size: 285px 160px;
   ${xs};
   top: -30px;
@@ -128,21 +128,21 @@ const three = css`
 `
 
 const four = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}fourth.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-blue-mesh.jpg);
   background-size: 550px 310px;
   left: 100px;
   ${m};
 `
 
 const five = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}fifth.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-fujino-tower-no-3.jpg);
   background-size: 650px 365px;
   top: -140px;
   ${l};
 `
 
 const six = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}sixth.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-burbling-water.jpg);
   background-size: 285px 160px;
   ${xs};
 `
