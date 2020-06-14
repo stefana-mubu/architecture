@@ -18,56 +18,56 @@ const ProjectList = () => {
       <ProjectCard
         className={cx(one, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Sound of Water"
-        link="https://youtu.be/zhkvVQmLQRE"
+        link="https://www.youtube.com/embed/zhkvVQmLQRE"
       >
         Sound of Water
       </ProjectCard>
       <ProjectCard
         className={cx(two, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="An Intruder"
-        link="https://youtu.be/j4beSSSVhSE"
+        link="https://www.youtube.com/embed/j4beSSSVhSE"
       >
         An Intruder
       </ProjectCard>
       <ProjectCard
         className={cx(three, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="The Red Glow"
-        link="https://youtu.be/eGzdcVYwBOs"
+        link="https://www.youtube.com/embed/eGzdcVYwBOs"
       >
         The Red Glow
       </ProjectCard>
       <ProjectCard
         className={cx(four, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="The Blue Mesh"
-        link="https://youtu.be/784FnUcxMZ8"
+        link="https://www.youtube.com/embed/784FnUcxMZ8"
       >
         The Blue Mesh
       </ProjectCard>
       <ProjectCard
         className={cx(five, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="The Top Floor of Fujino Building No. 3"
-        link="https://youtu.be/15i0FbqJBTA"
+        link="https://www.youtube.com/embed/15i0FbqJBTA"
       >
         The Top Floor of Fujino Building No. 3
       </ProjectCard>
       <ProjectCard
         className={cx(six, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Burbling of Water"
-        link="https://youtu.be/WzaSL5eAWJk"
+        link="https://www.youtube.com/embed/WzaSL5eAWJk"
       >
         Burbling of Water
       </ProjectCard>
       <ProjectCard
         className={cx(one, 'seven', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="The Secret Chamber"
-        link="https://youtu.be/59RJ_IA2378"
+        link="https://www.youtube.com/embed/59RJ_IA2378"
       >
         The Secret Chamber
       </ProjectCard>
       <ProjectCard
         className={cx(two, 'eight', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Reddish Light"
-        link="https://youtu.be/4lJwHchMyS4"
+        link="https://www.youtube.com/embed/4lJwHchMyS4"
       >
         Reddish Light
       </ProjectCard>
