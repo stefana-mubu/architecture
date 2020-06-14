@@ -47,7 +47,7 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
         centered
       >
         <Modal.Body>
-          <ResponsiveEmbed src='https://www.youtube.com/embed/2yqz9zgoC-U' ratio='16:9' allowFullScreen />
+          <ResponsiveEmbed src={link} ratio='16:9' allowFullScreen />
         </Modal.Body>
       </Modal>
     </React.Fragment>

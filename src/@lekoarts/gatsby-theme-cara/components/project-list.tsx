@@ -17,67 +17,59 @@ const ProjectList = () => {
     <React.Fragment>
       <ProjectCard
         className={cx(one, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 1"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+        title="Sound of Water"
+        link="https://youtu.be/zhkvVQmLQRE"
       >
-        Description of project 1
+        Sound of Water
       </ProjectCard>
       <ProjectCard
         className={cx(two, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 2"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+        title="An Intruder"
+        link="https://youtu.be/j4beSSSVhSE"
       >
-        Description of project 2
+        An Intruder
       </ProjectCard>
       <ProjectCard
         className={cx(three, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 3"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+        title="The Red Glow"
+        link="https://youtu.be/eGzdcVYwBOs"
       >
-        Description of project 3
+        The Red Glow
       </ProjectCard>
       <ProjectCard
         className={cx(four, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 4"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+        title="The Blue Mesh"
+        link="https://youtu.be/784FnUcxMZ8"
       >
-        Description of project 4
+        The Blue Mesh
       </ProjectCard>
       <ProjectCard
         className={cx(five, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 3"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #009385 0%, #FCBC21 100%)"
+        title="The Top Floor of Fujino Building No. 3"
+        link="https://youtu.be/15i0FbqJBTA"
       >
-        Description of project 3
+        The Top Floor of Fujino Building No. 3
       </ProjectCard>
       <ProjectCard
         className={cx(six, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 4"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #DA852F 0%, #90FF4E 100%)"
+        title="Burbling of Water"
+        link="https://youtu.be/WzaSL5eAWJk"
       >
-        Description of project 4
+        Burbling of Water
       </ProjectCard>
       <ProjectCard
         className={cx(one, 'seven', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 3"
+        title="The Secret Chamber"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #001625 0%, #FA1729 100%)"
       >
-        Description of project 3
+        The Secret Chamber
       </ProjectCard>
       <ProjectCard
         className={cx(two, 'eight', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Project 4"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        bg="linear-gradient(to right, #DAF647 0%, #B17A76 100%)"
+        title="Reddish Light"
+        link="https://youtu.be/4lJwHchMyS4"
       >
-        Description of project 4
+        Reddish Light
       </ProjectCard>
     </React.Fragment>
   )
@@ -110,6 +102,7 @@ const one = css`
   left: 45px;
   ${s};
   &.seven {
+    background-image: url(/${process.env.IMG_PREFIX || ''}seventh.jpg);
     top: -105px;
     left: 65px;
   }
@@ -120,6 +113,7 @@ const two = css`
   background-size: 550px 310px;
   ${m};
   &.eight {
+    background-image: url(/${process.env.IMG_PREFIX || ''}eight.jpg);
     top: -70px;
     left: 20px;
   }
@@ -148,6 +142,8 @@ const five = css`
 `
 
 const six = css`
+  background-image: url(/${process.env.IMG_PREFIX || ''}sixth.jpg);
+  background-size: 285px 160px;
   ${xs};
 `
 
