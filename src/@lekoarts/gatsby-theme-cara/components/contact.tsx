@@ -11,9 +11,6 @@ import ContactMDX from "@lekoarts/gatsby-theme-cara/src/sections/contact"
 const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Content offset={offset} factor={factor}>
-      <Inner>
-        <ContactMDX />
-      </Inner>
       <Footer />
     </Content>
   </div>
