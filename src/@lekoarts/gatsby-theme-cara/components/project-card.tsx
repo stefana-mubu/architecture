@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx } from "theme-ui"
-import { css } from 'emotion'
+import { cx, css } from 'emotion'
 import { Modal, Button } from 'react-bootstrap'
 import ResponsiveEmbed from 'react-responsive-embed'
 
@@ -34,7 +34,7 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
           },
         }}
       >
-        <div className='title'>
+        <div className={cx(titleWrapper, 'title')}>
           <span className='flex-title'>{title}</span>
         </div>
       </button>
@@ -53,6 +53,10 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
     </React.Fragment>
   )
 }
+
+const titleWrapper = css`
+  font-size: 1.5rem;
+`
 
 const modalWrapper = css`
   .modal-content {
