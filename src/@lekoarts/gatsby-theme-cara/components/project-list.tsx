@@ -60,7 +60,7 @@ const ProjectList = () => {
       <ProjectCard
         className={cx(one, 'seven', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="The Secret Chamber"
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        link="https://youtu.be/59RJ_IA2378"
       >
         The Secret Chamber
       </ProjectCard>
