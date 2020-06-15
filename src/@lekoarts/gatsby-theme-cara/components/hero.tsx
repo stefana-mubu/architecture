@@ -15,12 +15,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         <div className={wrapper}>
           <h2 className={headline}>The Poetics of Home</h2>
           <p className={cx(text, bigSpacer)}>a project by Stefana Dilova</p>
-          <p className={cx(text, halfSpacer)}>The following project explores the most intimate space of a family – its home.</p>
+          <p className={cx(text, halfSpacer)}>The following project explores the most intimate space of a family – its home – with different atmospheres portrayed in eight short films. </p>
           <p className={text}>
-            Written content that describes imagined spaces of such kind is the fundamental medium that was utilised in this analysis.
-            The auto-fictional novel <span className={italic}>Territory of Light</span> written by the Japanese author Yuko Tsushima and the home of its main character built the point of departure for this work.
-            The following eight short films came into being through the interpretation and representation of the text with the help of architectural tools.
-            The poetical depictions of everyday spaces found in the novel can be phenomenologically traced through film and sound.
+            Written content that describes imagined spaces of this type is the fundamental medium used in this analysis. The auto-fictional novel <span className={italic}>Territory of Light</span> written by the Japanese author Yuko Tsushima and the home of its main character represent the point of departure for this work. The following eight short films came into being through the interpretation and representation of the text with the help of architectural tools. The poetical depictions of everyday spaces found in the novel can be phenomenologically traced through film and sound.
           </p>
         </div>
       </Inner>
