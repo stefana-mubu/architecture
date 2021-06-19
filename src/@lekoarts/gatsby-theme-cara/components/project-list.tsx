@@ -15,65 +15,25 @@ const ProjectList = () => {
 
   return (
     <React.Fragment>
-      <ProjectCard
-        className={cx(one, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Sound of Water"
-        link="https://www.youtube.com/embed/zhkvVQmLQRE"
-      >
-        Sound of Water
-      </ProjectCard>
-      <ProjectCard
-        className={cx(two, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="An Intruder"
-        link="https://www.youtube.com/embed/j4beSSSVhSE"
-      >
-        An Intruder
-      </ProjectCard>
-      <ProjectCard
-        className={cx(three, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="The Red Glow"
-        link="https://www.youtube.com/embed/eGzdcVYwBOs"
-      >
-        The Red Glow
-      </ProjectCard>
-      <ProjectCard
-        className={cx(four, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="The Blue Mesh"
-        link="https://www.youtube.com/embed/784FnUcxMZ8"
-      >
-        The Blue Mesh
-      </ProjectCard>
-      <ProjectCard
-        className={cx(five, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="The Top Floor of Fujino Building No. 3"
-        link="https://www.youtube.com/embed/15i0FbqJBTA"
-      >
-        The Top Floor of Fujino Building No. 3
-      </ProjectCard>
-      <ProjectCard
-        className={cx(six, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Burbling of Water"
-        link="https://www.youtube.com/embed/WzaSL5eAWJk"
-      >
-        Burbling of Water
-      </ProjectCard>
-      <ProjectCard
-        className={cx(one, 'seven', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="The Secret Chamber"
-        link="https://www.youtube.com/embed/59RJ_IA2378"
-      >
-        The Secret Chamber
-      </ProjectCard>
-      <ProjectCard
-        className={cx(two, 'eight', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-        title="Reddish Light"
-        link="https://www.youtube.com/embed/4lJwHchMyS4"
-      >
-        Reddish Light
-      </ProjectCard>
+      <div className={container}>
+        <ProjectCard
+          className={cx(five, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
+          title="The Top Floor of Fujino Building No. 3"
+          link="https://www.youtube.com/embed/E5dEtS_eEKo"
+        >
+          The Top Floor of Fujino Building No. 3
+        </ProjectCard>
+      </div>
     </React.Fragment>
   )
 }
+
+const container = css`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+`
 
 const xs = css`
   width: 285px;
@@ -91,8 +51,8 @@ const m = css`
 `
 
 const l = css`
-  width: 650px;
-  height: 365px;
+  width: 800px;
+  height: 515px;
 `
 
 const one = css`
@@ -136,8 +96,7 @@ const four = css`
 
 const five = css`
   background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-fujino-tower-no-3.jpg);
-  background-size: 650px 365px;
-  top: -140px;
+  background-size: 800px 515px;
   ${l};
 `
 

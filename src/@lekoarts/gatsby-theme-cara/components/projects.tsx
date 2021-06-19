@@ -22,7 +22,7 @@ const Projects = ({ offset, factor = 2, factorDivider = 2 }: { offset: number; f
           sx={{
             display: `grid`,
             gridGap: [4, 4, 4, 4],
-            gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`, `repeat(2, 1fr)`],
+            gridTemplateColumns: '1fr',
             h2: { gridColumn: `-1/1` },
           }}
         >
@@ -35,9 +35,8 @@ const Projects = ({ offset, factor = 2, factorDivider = 2 }: { offset: number; f
 
 const listContainer = css`
   @media only screen and (max-width: 1400px) {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: 1fr;
     width: 100%;
-    grid-gap: 2rem;
     button {
       width: 100%;
       height: auto;
