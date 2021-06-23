@@ -1,19 +1,23 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import styled from "@emotion/styled"
-import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
-import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
-import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
+import { css } from 'emotion'
 import Footer from "@lekoarts/gatsby-theme-cara/src/components/footer"
-// @ts-ignore
-import ContactMDX from "@lekoarts/gatsby-theme-cara/src/sections/contact"
 
-const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
-  <div>
-    <Content offset={offset} factor={factor}>
+const Contact = () => (
+  <div sx={{ width: [`full`, `full`, `full`, `full`, `full`, `full`], textAlign: `left` }}>
+    <div className={wrapper}>
       <Footer />
-    </Content>
+    </div>
   </div>
 )
+
+const wrapper = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 1rem 1rem;
+`
 
 export default Contact

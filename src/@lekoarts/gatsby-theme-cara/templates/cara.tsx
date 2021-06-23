@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Parallax } from "react-spring/renderprops-addons.cjs"
+import { Parallax } from "@react-spring/parallax"
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout"
 import Hero from "@lekoarts/gatsby-theme-cara/src/components/hero"
 import Projects from "@lekoarts/gatsby-theme-cara/src/components/projects"

@@ -9,20 +9,65 @@ function getRandomInt(max) {
 }
 
 const ProjectList = () => {
-  const upAndDowns = [undefined, undefined, undefined, undefined] // [card, cardAlt, cardThird]
-  const effects = [undefined, undefined, undefined, undefined] // [scaledDown, scaledUp, skewed, skewedNeg]
-  //const sizes = [small, normal, medium, big]
-
   return (
     <React.Fragment>
       <div className={container}>
         <ProjectCard
-          className={cx(five, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
-          title="The Top Floor of Fujino Building No. 3"
+          className={cx(l, nine)}
+          title="The Poetics of Home"
           link="https://www.youtube.com/embed/E5dEtS_eEKo"
         >
           The Top Floor of Fujino Building No. 3
         </ProjectCard>
+      </div>
+      <div
+        sx={{
+          display: `grid`,
+          gridGap: [4, 4, 4, 4],
+          gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`, `repeat(2, 1fr)`],
+          h2: { gridColumn: `-1/1` },
+        }}
+      >
+        <ProjectCard
+          className={cx(one, image)}
+          title="The Top Floor of Fujino Building No. 3"
+          link="https://www.youtube.com/embed/zhkvVQmLQRE"
+        />
+        <ProjectCard
+          className={cx(two, image)}
+          title="Sound of Water"
+          link="https://www.youtube.com/embed/j4beSSSVhSE"
+        />
+        <ProjectCard
+          className={cx(three, image)}
+          title="An Intruder"
+          link="https://www.youtube.com/embed/eGzdcVYwBOs"
+        />
+        <ProjectCard
+          className={cx(four, image)}
+          title="The Blue Mesh"
+          link="https://www.youtube.com/embed/784FnUcxMZ8"
+        />
+        <ProjectCard
+          className={cx(five, image)}
+          title="The Red Glow"
+          link="https://www.youtube.com/embed/15i0FbqJBTA"
+        />
+        <ProjectCard
+          className={cx(six, image)}
+          title="The Secret Chamber"
+          link="https://www.youtube.com/embed/WzaSL5eAWJk"
+        />
+        <ProjectCard
+          className={cx(seven, image)}
+          title="Burbling of Water"
+          link="https://www.youtube.com/embed/59RJ_IA2378"
+        />
+        <ProjectCard
+          className={cx(eight, image)}
+          title="Reddish Light"
+          link="https://www.youtube.com/embed/4lJwHchMyS4"
+        />
       </div>
     </React.Fragment>
   )
@@ -32,7 +77,6 @@ const container = css`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100%;
 `
 
 const xs = css`
@@ -51,59 +95,54 @@ const m = css`
 `
 
 const l = css`
-  width: 800px;
-  height: 515px;
+  width: 100%;
+  height: 915px;
+  background-size: cover;
 `
 
-const one = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-sound-of-water.jpg);
-  background-size: 460px 260px;
-  top: -20px;
-  left: 45px;
-  ${s};
-  &.seven {
-    background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-secret-chamber.jpg);
-    top: -105px;
-    left: 65px;
-  }
+const image = css`
+  width: 100%;
+  max-height: 365px;
+  padding: 4rem;
+  background-size: cover;
+  display: flex;
+  flex: 1 1 auto;
 `
 
 const two = css`
-  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-an-intruder.jpg);
-  background-size: 550px 310px;
-  ${m};
-  &.eight {
-    background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-reddish-light.jpg);
-    top: -70px;
-    left: 20px;
-  }
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-sound-of-water.jpg);
+`
+
+const six = css`
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-secret-chamber.jpg);
+`
+
+const eight = css`
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-reddish-light.jpg);
 `
 
 const three = css`
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-an-intruder.jpg);
+`
+
+const five = css`
   background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-red-glow.jpg);
-  background-size: 285px 160px;
-  ${xs};
-  top: -30px;
-  left: calc(100% - 315px);
 `
 
 const four = css`
   background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-the-blue-mesh.jpg);
-  background-size: 550px 310px;
-  left: 100px;
-  ${m};
 `
 
-const five = css`
+const nine = css`
   background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-fujino-tower-no-3.jpg);
-  background-size: 800px 515px;
-  ${l};
 `
 
-const six = css`
+const seven = css`
   background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-burbling-water.jpg);
-  background-size: 285px 160px;
-  ${xs};
+`
+
+const one = css`
+  background-image: url(/${process.env.IMG_PREFIX || ''}territory-of-light-fujino-tower-no-3-2.jpg);
 `
 
 const card = css`

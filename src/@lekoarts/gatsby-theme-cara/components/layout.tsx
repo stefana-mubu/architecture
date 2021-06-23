@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import { Global } from "@emotion/core"
+import { Global } from "@emotion/react"
 import { jsx } from "theme-ui"
 import SEO from "@lekoarts/gatsby-theme-cara/src/components/seo"
 

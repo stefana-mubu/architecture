@@ -1,21 +1,12 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { css } from 'emotion'
-import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
-import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
-// @ts-ignore
-import ProjectsMDX from "@lekoarts/gatsby-theme-cara/src//sections/projects"
+import ProjectList from "./project-list"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const Projects = ({ offset, factor = 2, factorDivider = 2 }: { offset: number; factor?: number; factorDivider?: number }) => (
-  <div>
-    <Divider
-      bg="#3c3c3c"
-      speed={0}
-      offset={offset}
-      factor={factorDivider}
-    />
-    <Content speed={0.4} offset={offset} factor={factor}>
+const Projects = () => {
+  return (
+    <div sx={{ width: [`full`, `full`, `full`, `full`, `full`, `full`], backgroundColor: '#3c3c3c', padding: '5rem 2rem' }}>
       <div sx={{ display: `flex`, justifyContent: `center`, width: [`full`], textAlign: `left` }}>
         <div
           className={listContainer}
@@ -26,15 +17,45 @@ const Projects = ({ offset, factor = 2, factorDivider = 2 }: { offset: number; f
             h2: { gridColumn: `-1/1` },
           }}
         >
-          <ProjectsMDX />
+          <ProjectList />
         </div>
       </div>
-    </Content>
-  </div>
-)
+    </div>
+  )
+}
 
 const listContainer = css`
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (min-width: 1600px) {
+    grid-template-columns: 1fr;
+    width: 70%;
+    button {
+      width: 100%;
+      height: auto;
+      padding-top: 56.25%;
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: none;
+      top: 0 !important;
+      left: 0 !important;
+      position: relative;
+      .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .flex-title {
+          font-weight: 300;
+          font-family: 'Cormorant Garamond', serif;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  };
+  @media only screen and (max-width: 1600px) {
     grid-template-columns: 1fr;
     width: 100%;
     button {
@@ -54,6 +75,8 @@ const listContainer = css`
         width: 100%;
         height: 100%;
         .flex-title {
+          font-weight: 300;
+          font-family: 'Cormorant Garamond', serif;
           height: 100%;
           display: flex;
           justify-content: center;
