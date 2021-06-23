@@ -1,9 +1,10 @@
 /** @jsx jsx */
-import { Box, Flex, Link, jsx } from "theme-ui"
+import { css } from 'emotion'
+import { jsx } from "theme-ui"
 
 const Footer = () => {
   return (
-    <footer style={{ textAlign: 'center' }}>
+    <footer className={footer}>
       Contact <a href="mailto:stefana.dilova@gmail.com">Stefana Dilova</a>
       <br />
       <br />
@@ -16,5 +17,12 @@ const Footer = () => {
     </footer>
   )
 }
+
+const footer = css`
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+`
 
 export default Footer

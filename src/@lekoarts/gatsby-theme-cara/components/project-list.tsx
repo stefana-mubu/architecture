@@ -102,7 +102,6 @@ const l = css`
 
 const image = css`
   width: 100%;
-  max-height: 365px;
   padding: 4rem;
   background-size: cover;
   display: flex;

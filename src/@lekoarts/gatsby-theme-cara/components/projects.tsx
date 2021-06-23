@@ -31,7 +31,7 @@ const listContainer = css`
     button {
       width: 100%;
       height: auto;
-      padding-top: 56.25%;
+      padding-top: 45%;
       background-position: center;
       background-size: 100% 100%;
       background-repeat: none;
@@ -61,7 +61,7 @@ const listContainer = css`
     button {
       width: 100%;
       height: auto;
-      padding-top: 56.25%;
+      padding-top: 45%;
       background-position: center;
       background-size: 100% 100%;
       background-repeat: none;
