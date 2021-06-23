@@ -17,7 +17,7 @@ const wrapper = css`
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0rem 1rem 1rem;
+  padding: 0rem 2rem 1rem;
 `
 
 export default Contact

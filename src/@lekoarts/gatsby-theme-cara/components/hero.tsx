@@ -26,7 +26,7 @@ const wrapper = css`
   justify-content: center;
   max-width: 695px;
   margin: 0 auto;
-  padding: 5rem 1rem;
+  padding: 8rem 3rem 10rem;
 `
 
 const headline = css`

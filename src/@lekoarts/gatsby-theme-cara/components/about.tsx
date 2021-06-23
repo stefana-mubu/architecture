@@ -24,9 +24,9 @@ const wrapper = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 695px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 5rem 1rem;
+  padding: 5rem 3rem;
 `
 
 const headline = css`
