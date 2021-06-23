@@ -5,7 +5,7 @@ import { jsx } from "theme-ui"
 const Footer = () => {
   return (
     <footer className={footer}>
-      Contact <a href="mailto:stefana.dilova@gmail.com">Stefana Dilova</a>
+      Contact <a href="mailto:stefana.dilova@gmail.com">Stefanakis Dilova</a>
       <br />
       <br />
       All copyrights for the English text quoted in the video belong to Geraldine Harcourt, 2018.
