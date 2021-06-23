@@ -29,17 +29,7 @@ module.exports = {
       // See the theme's README for all available options
       options: {},
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Cormorant Garamond`,
-            variants: [`300`, `300i`, `500`]
-          },
-        ],
-      },
-    },
+    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],

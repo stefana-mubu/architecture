@@ -14,7 +14,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^2.0.1",
@@ -24,7 +25,7 @@
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-netlify": "^3.8.0",
     "gatsby-plugin-offline": "^4.8.0",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-preload-fonts": "^2.8.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
