@@ -20,6 +20,7 @@ const ProjectList = () => {
           The Top Floor of Fujino Building No. 3
         </ProjectCard>
       </div>
+      <h2 className={headline}>Film Chapters</h2>
       <div
         sx={{
           display: `grid`,
@@ -72,6 +73,16 @@ const ProjectList = () => {
     </React.Fragment>
   )
 }
+
+const headline = css`
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  color: #fff;
+  margin: 2rem 0;
+`
 
 const container = css`
   display: flex;
