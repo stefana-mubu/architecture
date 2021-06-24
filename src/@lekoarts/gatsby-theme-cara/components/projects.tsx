@@ -28,6 +28,9 @@ const listContainer = css`
   @media only screen and (min-width: 1600px) {
     grid-template-columns: 1fr;
     width: 70%;
+    button.main {
+      padding-top: 55%;
+    }
     button {
       width: 100%;
       height: auto;
@@ -58,6 +61,9 @@ const listContainer = css`
   @media only screen and (max-width: 1600px) {
     grid-template-columns: 1fr;
     width: 100%;
+    button.main {
+      padding-top: 55%;
+    }
     button {
       width: 100%;
       height: auto;

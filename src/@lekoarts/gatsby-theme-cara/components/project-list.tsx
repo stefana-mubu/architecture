@@ -13,7 +13,7 @@ const ProjectList = () => {
     <React.Fragment>
       <div className={container}>
         <ProjectCard
-          className={cx(l, nine)}
+          className={cx(l, nine, 'main')}
           title="The Poetics of Home"
           link="https://www.youtube.com/embed/E5dEtS_eEKo"
         >
@@ -31,17 +31,17 @@ const ProjectList = () => {
         <ProjectCard
           className={cx(one, image)}
           title="The Top Floor of Fujino Building No. 3"
-          link="https://www.youtube.com/embed/zhkvVQmLQRE"
+          link="https://www.youtube.com/embed/15i0FbqJBTA"
         />
         <ProjectCard
           className={cx(two, image)}
           title="Sound of Water"
-          link="https://www.youtube.com/embed/j4beSSSVhSE"
+          link="https://www.youtube.com/embed/zhkvVQmLQRE"
         />
         <ProjectCard
           className={cx(three, image)}
           title="An Intruder"
-          link="https://www.youtube.com/embed/eGzdcVYwBOs"
+          link="https://www.youtube.com/embed/j4beSSSVhSE"
         />
         <ProjectCard
           className={cx(four, image)}
@@ -51,17 +51,17 @@ const ProjectList = () => {
         <ProjectCard
           className={cx(five, image)}
           title="The Red Glow"
-          link="https://www.youtube.com/embed/15i0FbqJBTA"
+          link="https://www.youtube.com/embed/eGzdcVYwBOs"
         />
         <ProjectCard
           className={cx(six, image)}
           title="The Secret Chamber"
-          link="https://www.youtube.com/embed/WzaSL5eAWJk"
+          link="https://www.youtube.com/embed/59RJ_IA2378"
         />
         <ProjectCard
           className={cx(seven, image)}
           title="Burbling of Water"
-          link="https://www.youtube.com/embed/59RJ_IA2378"
+          link="https://www.youtube.com/embed/WzaSL5eAWJk"
         />
         <ProjectCard
           className={cx(eight, image)}
