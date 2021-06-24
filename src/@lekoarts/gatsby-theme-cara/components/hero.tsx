@@ -27,6 +27,7 @@ const wrapper = css`
   max-width: 695px;
   margin: 0 auto;
   padding: 8rem 3rem 10rem;
+  min-height: 100vh;
 `
 
 const headline = css`
