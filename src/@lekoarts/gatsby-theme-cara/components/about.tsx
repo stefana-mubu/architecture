@@ -11,11 +11,11 @@ const About = () => (
     <div sx={{ width: [`full`, `full`, `full`, `full`, `full`, `full`], textAlign: `left` }}>
       <div className={wrapper}>
         <h2 className={headline}>About the project</h2>
-        <p className={cx(text, halfSpacer)}><span className={italic}>The Poetics of Home</span> explores imagined spaces of ‘home’ that are described in fictional literature.</p>
-        <p className={cx(text, halfSpacer)}>The novel <span className={italic}>Territory of Light</span> by the Japanese author Yuko Tsushima was chosen for this analysis.</p>
+        <p className={cx(text, halfSpacer)}><span className={italic}>The Poetics of Home</span> explores imagined spaces of "home" depicted in fictional literature.</p>
+        <p className={cx(text, halfSpacer)}>The novel <span className={italic}>Territory of Light</span> by the Japanese author Yuko Tsushima was the focus of this analysis.</p>
         <p className={cx(text, halfSpacer)}>The story in the book follows the life of a single mother and daughter for one year in an apartment on the top floor of a dilapidated office building in Tokyo. The work by Thushima encapsulates very poetical images of ‘home’, as well as how it is perceived by the main character, Fujino.</p>
-        <p className={cx(text, halfSpacer)}>The author of <span className={italic}>The Poetics of Home</span> imagined and visually translated some of the spaces of the home described in the book. Atmospheric properties such as light, colours, shadows, materials, the seasons and sounds enable a different way to perceive a space that up to now existed only in the form of text.</p>
-        <p className={cx(text, halfSpacer)}>The eight short films represent and vitalise different atmospheres and conditions in the apartment that the main character of the book inhabits. These atmospheres can be traced through the original text in Japanese and its translation into English by Geraldine Harcourt.</p>
+        <p className={cx(text, halfSpacer)}>The author of <span className={italic}>The Poetics of Home</span> imagined and visually translated selected spaces of the home described in the book. Atmospheric properties such as light, colours, shadows, materials, the seasons and sounds enable a different way to perceive a space that up to now existed only in the form of text.</p>
+        <p className={cx(text, halfSpacer)}>The 8 film chapters combined into 1 film represent and vitalise different atmospheres and conditions in the apartment that the main character of the book, Fujino, inhabits. These atmospheres can be traced through the original text in Japanese and its translation into English by Geraldine Harcourt.</p>
       </div>
     </div>
 )
