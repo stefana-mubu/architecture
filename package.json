@@ -21,7 +21,7 @@
     "@lekoarts/gatsby-theme-cara": "^2.0.1",
     "bootstrap": "^5.0.2",
     "emotion": "^10.0.27",
-    "gatsby": "^3.8.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-netlify": "^3.8.0",
     "gatsby-plugin-offline": "^4.8.0",
